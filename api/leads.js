@@ -1,14 +1,14 @@
 // api/leads.js
 // Função serverless do Vercel. O navegador chama /api/leads (mesmo domínio,
-// sem CORS). Aqui no servidor a gente busca os dados no Apps Script e
-// devolve pro navegador.
+// sem CORS). Aqui no servidor a gente busca os dados no n8n (que por sua vez
+// lê a tabela do Excel via Microsoft Excel 365) e devolve pro navegador.
 
 export default async function handler(req, res) {
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx-I42Rg66nQe-IteQlW3KRkZgHFV5YV5_hvTsetKba9lb030d_xDAU69Io5Ey4l4w2YQ/exec';
+  const N8N_WEBHOOK_URL = 'https://fergrwe13123.app.n8n.cloud/webhook/leads';
   try {
-    const resp = await fetch(APPS_SCRIPT_URL, { redirect: 'follow' });
+    const resp = await fetch(N8N_WEBHOOK_URL, { redirect: 'follow' });
     if (!resp.ok) {
-      throw new Error('Apps Script respondeu com status ' + resp.status);
+      throw new Error('n8n respondeu com status ' + resp.status);
     }
     const data = await resp.json();
     res.setHeader('Cache-Control', 'no-store');
