@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Revenda Mais · Dashboard de Leads Webmotors</title>
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABc0lEQVR4nO2Xu0vDUBTGf/emWhSsLXSToiiCLh0EoQ4urjo4Cu4OQrdOQhXUzQd0EXQRHPwbuhYEBaFDwcGhSn1Q3w1VUPtIHEpTjaURpMmSb8vH4X6/cy7kcgRNdOIP6838/yqiZoTZ+2G0K7gViLQ73Jwl7Q43Q0irwnZLONH9dzk+ARfABXABPJYVUoKmGZ+B6SlCy1HKDy8gQAiBXtXw+H0Uj07JLW0YtUKR6FWt2amNmr/8iKS3k+7wKL7JcYJzM1wsxnlLnyEE6DoIAUqvj6GdNbRSmfvdQz6yOUp3j5b9WQL0TIzRvx7j8yZPRS1yvZqg8qxipJvUF1uga2QQ70CI1+M0V/GtlgCWVzB8sM1ldIVCMtUwTddSa6X2wt5u7gHQEQwQnJ+1Ot4a4P08SyGZQigSpESvVH+HgzEN4VEAKD8VyCf2LQHcx8gFcAFcAOcBmq1LdimiZoTzE6iT2B1cz5Rmw85wMG3Hddm5nn8Bjoh8zhiDACoAAAAASUVORK5CYII=">
-<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
 <base target="_top">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,32 +24,40 @@
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:'Inter',system-ui,sans-serif;background:var(--white);color:var(--ink);font-size:14px}
-  .wrap{max-width:1240px;margin:0 auto;padding:0 28px 64px}
-  .topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);z-index:50}
+
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);z-index:60}
   .brand{display:flex;align-items:center;gap:12px}
-  .brand-logo-img{height:34px;width:auto;display:block}
-  .brand-name{font-family:'Manrope';font-weight:800;font-size:17px;letter-spacing:-.02em}
-  .brand-sub{font-size:11.5px;color:var(--muted);font-weight:500;letter-spacing:.02em}
-  .avatar{width:36px;height:36px;border-radius:50%;background:var(--crimson-soft);color:var(--crimson);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;border:1.5px solid #F3CDD4}
+  .brand-logo-img{height:32px;width:auto;display:block}
+  .avatar{width:34px;height:34px;border-radius:50%;background:var(--crimson-soft);color:var(--crimson);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:1.5px solid #F3CDD4}
 
-  .tabs{display:flex;gap:4px;margin:26px 0 0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px;width:max-content;flex-wrap:wrap}
-  .tab{border:0;background:transparent;font:inherit;font-weight:600;color:var(--muted);padding:9px 16px;border-radius:9px;cursor:pointer;transition:all .15s}
-  .tab:hover{color:var(--ink)}
-  .tab.active{background:var(--white);color:var(--crimson);box-shadow:0 1px 3px rgba(24,27,33,.1)}
+  .app-layout{display:flex;max-width:1400px;margin:0 auto}
 
-  .page-head{display:flex;align-items:flex-end;justify-content:space-between;margin:30px 0 22px;flex-wrap:wrap;gap:12px}
-  h1{font-family:'Manrope';font-size:26px;font-weight:800;letter-spacing:-.03em}
-  .page-head p{color:var(--muted);margin-top:5px;font-size:13.5px}
-  .live-dot{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--green);background:var(--green-soft);padding:6px 12px;border-radius:99px}
-  .live-dot i{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 1.6s infinite}
-  .live-dot.err{color:var(--red);background:var(--red-soft)} .live-dot.err i{background:var(--red);animation:none}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-  .head-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sidebar{width:220px;flex:none;padding:22px 16px 40px;border-right:1px solid var(--line);position:sticky;top:61px;height:calc(100vh - 61px);overflow-y:auto}
+  .sidebar-title{font-family:'Manrope';font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);margin-bottom:16px}
+  .filter-group{margin-bottom:24px}
+  .filter-group label{display:block;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+
+  .tabs{display:flex;flex-direction:column;gap:2px;background:transparent;border:0;padding:0;width:100%}
+  .tab{border:0;background:transparent;font:inherit;font-weight:600;font-size:13px;color:var(--muted);padding:9px 11px;border-radius:9px;cursor:pointer;transition:all .15s;text-align:left;width:100%}
+  .tab:hover{background:var(--card);color:var(--ink)}
+  .tab.active{background:var(--crimson-soft);color:var(--crimson);box-shadow:none}
+
+  .mes-toggle{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;font-weight:700;color:var(--muted);margin-bottom:10px}
+  .mes-toggle span.on{color:var(--crimson)}
+  .switch{position:relative;display:inline-block;width:36px;height:20px;flex:none}
+  .switch input{opacity:0;width:0;height:0}
+  .slider{position:absolute;cursor:pointer;inset:0;background:#D9DDE4;transition:.2s;border-radius:99px}
+  .slider:before{position:absolute;content:"";height:14px;width:14px;left:3px;top:3px;background:#fff;transition:.2s;border-radius:50%;box-shadow:0 1px 2px rgba(0,0,0,.15)}
+  .switch input:checked + .slider{background:var(--crimson)}
+  .switch input:checked + .slider:before{transform:translateX(16px)}
+
+  .sidebar .period-select{width:100%;margin-bottom:0}
   .period-select{
     border:1px solid var(--line);background:var(--white);color:var(--ink);
     font:inherit;font-weight:600;font-size:13px;padding:8px 12px;border-radius:10px;
     cursor:pointer;box-shadow:0 1px 2px rgba(24,27,33,.04);
   }
+  .sidebar .btn-refresh{width:100%;justify-content:center;margin-top:4px}
   .btn-refresh{
     display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--white);
     color:var(--crimson);font:inherit;font-weight:700;font-size:13px;padding:8px 14px;border-radius:10px;
@@ -62,28 +69,29 @@
   .btn-refresh.spinning svg{animation:spin .7s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
 
-  .mes-toggle{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;color:var(--muted)}
-  .mes-toggle span.on{color:var(--crimson)}
-  .switch{position:relative;display:inline-block;width:38px;height:21px;flex:none}
-  .switch input{opacity:0;width:0;height:0}
-  .slider{position:absolute;cursor:pointer;inset:0;background:#D9DDE4;transition:.2s;border-radius:99px}
-  .slider:before{position:absolute;content:"";height:15px;width:15px;left:3px;top:3px;background:#fff;transition:.2s;border-radius:50%;box-shadow:0 1px 2px rgba(0,0,0,.15)}
-  .switch input:checked + .slider{background:var(--crimson)}
-  .switch input:checked + .slider:before{transform:translateX(17px)}
+  .main-content{flex:1;min-width:0;padding:24px 28px 64px}
 
-  .kpis{display:grid;grid-template-columns:repeat(7,1fr);gap:14px}
-  .kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .page-head{display:flex;align-items:flex-end;justify-content:space-between;margin:0 0 22px;flex-wrap:wrap;gap:12px}
+  h1{font-family:'Manrope';font-size:24px;font-weight:800;letter-spacing:-.03em}
+  .page-head p{color:var(--muted);margin-top:5px;font-size:13px}
+  .live-dot{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--green);background:var(--green-soft);padding:6px 12px;border-radius:99px}
+  .live-dot i{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 1.6s infinite}
+  .live-dot.err{color:var(--red);background:var(--red-soft)} .live-dot.err i{background:var(--red);animation:none}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+  .kpis{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;box-shadow:var(--shadow);position:relative;overflow:hidden}
   .kpi.hero{background:linear-gradient(150deg,var(--crimson) 0%,#9E0C24 100%);border-color:transparent}
   .kpi.hero .kpi-label,.kpi.hero .kpi-note{color:rgba(255,255,255,.85)}
   .kpi.hero .kpi-value{color:#fff}
-  .kpi-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-  .kpi-label{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.03em;text-transform:uppercase}
-  .kpi-icon{width:32px;height:32px;border-radius:9px;background:var(--white);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+  .kpi-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+  .kpi-label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.03em;text-transform:uppercase}
+  .kpi-icon{width:28px;height:28px;border-radius:8px;background:var(--white);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
   .kpi.hero .kpi-icon{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.22)}
-  .kpi-icon svg{width:16px;height:16px;stroke:var(--crimson)}
+  .kpi-icon svg{width:14px;height:14px;stroke:var(--crimson)}
   .kpi.hero .kpi-icon svg{stroke:#fff}
-  .kpi-value{font-family:'Manrope';font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1}
-  .kpi-note{font-size:12px;font-weight:600;margin-top:9px;color:var(--muted)}
+  .kpi-value{font-family:'Manrope';font-size:26px;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .kpi-note{font-size:11px;font-weight:600;margin-top:8px;color:var(--muted)}
   .kpi-note.good{color:var(--green)}
 
   .grid{display:grid;gap:14px;margin-top:14px}
@@ -188,7 +196,6 @@
   .co-ico svg{width:15px;height:15px;stroke:var(--muted)}
   .co b{font-weight:600;display:block}
   .co span{font-size:11.5px;color:var(--faint)}
-  .cell-sub{font-size:11.5px;color:var(--faint);display:block;margin-top:2px}
   .badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:99px;white-space:nowrap}
   .badge i{width:6px;height:6px;border-radius:50%;display:inline-block}
   .b-green{background:var(--green-soft);color:var(--green)} .b-green i{background:var(--green)}
@@ -197,19 +204,15 @@
   .b-orange{background:var(--orange-soft);color:var(--orange)} .b-orange i{background:var(--orange)}
   .b-gray{background:var(--gray-soft);color:var(--gray)} .b-gray i{background:var(--gray)}
   .b-red{background:var(--red-soft);color:var(--red)} .b-red i{background:var(--red)}
-  .prob{display:flex;align-items:center;gap:9px;min-width:120px}
-  .prob-track{flex:1;height:6px;background:var(--gray-soft);border-radius:99px;overflow:hidden}
-  .prob-fill{height:100%;border-radius:99px}
-  .prob b{font-size:12px;font-weight:700;width:34px;text-align:right;font-variant-numeric:tabular-nums}
-  .p-hi{background:linear-gradient(90deg,#16A34A,#34C46B)}
-  .p-mid{background:linear-gradient(90deg,var(--crimson),#E0526B)}
-  .p-low{background:#C9CED6}
   .obs{color:var(--muted);max-width:200px;white-space:normal;font-size:12.5px;line-height:1.45}
-  .origem{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:12px;color:var(--ink)}
-  .origem svg{width:13px;height:13px;stroke:var(--crimson)}
   .table-footer{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;font-size:12.5px;color:var(--muted);background:var(--card);border-top:1px solid var(--line)}
 
-  @media(max-width:1024px){
+  @media(max-width:1100px){
+    .app-layout{flex-direction:column}
+    .sidebar{width:100%;height:auto;position:static;border-right:0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:16px}
+    .filter-group{margin-bottom:0;min-width:160px}
+  }
+  @media(max-width:900px){
     .kpis{grid-template-columns:repeat(2,1fr)}
     .grid.cols-2a,.grid.cols-2b{grid-template-columns:1fr}
     .donut-wrap{flex-direction:column}
@@ -225,26 +228,26 @@
 </head>
 
 <body>
-<div class="wrap">
 
-  <header class="topbar">
-    <div class="brand">
-      <img class="brand-logo-img" src="data:image/png;base64,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" alt="Revenda Mais — Leads Webmotors">
+<header class="topbar">
+  <div class="brand">
+    <img class="brand-logo-img" src="LOGO_BASE64_AQUI" alt="Revenda Mais — Leads Webmotors">
+  </div>
+  <div class="avatar">RM</div>
+</header>
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-title">Filtros</div>
+
+    <div class="filter-group">
+      <label>Rede</label>
+      <nav class="tabs" id="redeTabs" role="tablist"></nav>
     </div>
-    <div class="top-right"><div class="avatar">RM</div></div>
-  </header>
 
-  <nav class="tabs" id="redeTabs" role="tablist"></nav>
-
-  <section id="s1">
-    <div class="page-head">
-      <div>
-        <h1 id="pageTitle">Dashboard de Leads Webmotors</h1>
-        <p id="pageSub">Carregando dados da planilha…</p>
-      </div>
-      <span class="live-dot" id="liveDot"><i></i><span id="liveDotText">Conectando…</span></span>
-    </div>
-    <div class="head-right" style="margin:0 0 20px">
+    <div class="filter-group">
+      <label>Mês de referência</label>
       <div class="mes-toggle" id="mesToggle">
         <span id="mesLabelFechamento" class="on">Fechamento</span>
         <label class="switch">
@@ -256,154 +259,175 @@
       <select class="period-select" id="periodoSelect">
         <option value="todos">Todos os períodos</option>
       </select>
+    </div>
+
+    <div class="filter-group">
+      <label>Representante</label>
       <select class="period-select" id="repSelect">
         <option value="todos">Todos os representantes</option>
       </select>
+    </div>
+
+    <div class="filter-group">
+      <label>Equipe</label>
       <select class="period-select" id="equipeSelect">
         <option value="todos">Todas as equipes</option>
       </select>
-      <button class="btn-refresh" id="btnRefresh" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
-        <span id="btnRefreshText">Atualizar Dashboard</span>
-      </button>
     </div>
 
-    <div class="kpis">
-      <div class="kpi hero">
-        <div class="kpi-top"><span class="kpi-label">Total Leads</span>
-          <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-        </div>
-        <div class="kpi-value" id="kpiTotal">–</div>
-        <div class="kpi-note" id="kpiTotalNote">&nbsp;</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-top"><span class="kpi-label">Em Andamento</span>
-          <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
-        </div>
-        <div class="kpi-value" id="kpiAndamento">–</div>
-        <div class="kpi-note">&nbsp;</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-top"><span class="kpi-label">Perdidos</span>
-          <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg></span>
-        </div>
-        <div class="kpi-value" id="kpiPerdidos">–</div>
-        <div class="kpi-note" id="kpiPerdidosNote">&nbsp;</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-top"><span class="kpi-label">Contratos Fechados</span>
-          <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
-        </div>
-        <div class="kpi-value" id="kpiFechados">–</div>
-        <div class="kpi-note good" id="kpiFechadosNote">&nbsp;</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-top"><span class="kpi-label">Taxa de Conversão</span>
-          <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 12 18 5"/><circle cx="12" cy="12" r="1.6" style="fill:#C8102E" stroke="none"/></svg></span>
-        </div>
-        <div class="kpi-value" id="kpiConversao">–</div>
-        <div class="kpi-note good" id="kpiConversaoNote">&nbsp;</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-top"><span class="kpi-label">Demos Agendadas</span>
-          <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M9 14.5l2 2 4-4"/></svg></span>
-        </div>
-        <div class="kpi-value" id="kpiDemos">–</div>
-        <div class="kpi-note">Coluna Demo Agendada</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-top"><span class="kpi-label">Demos Realizadas</span>
-          <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="m9 15 2 2 4-4"/></svg></span>
-        </div>
-        <div class="kpi-value" id="kpiDemosRealizadas">–</div>
-        <div class="kpi-note">Coluna Demo Realizada</div>
-      </div>
-    </div>
+    <button class="btn-refresh" id="btnRefresh" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
+      <span id="btnRefreshText">Atualizar</span>
+    </button>
+  </aside>
 
-    <div class="grid cols-2a">
-      <div class="card">
-        <div class="card-head">
-          <div><div class="card-title">Distribuição de Leads por Estágio</div><div class="card-sub">Situação atual da base filtrada</div></div>
-          <span class="card-tag" id="donutTag">0 leads</span>
+  <main class="main-content">
+    <section id="s1">
+      <div class="page-head">
+        <div>
+          <h1 id="pageTitle">Dashboard de Leads Webmotors</h1>
+          <p id="pageSub">Carregando dados da planilha…</p>
         </div>
-        <div class="donut-wrap">
-          <div class="donut">
-            <svg width="230" height="230" viewBox="0 0 230 230" id="donutSvg">
-              <circle cx="115" cy="115" r="88" fill="none" stroke="#EEF0F4" stroke-width="26"/>
-            </svg>
-            <div class="donut-center"><b id="donutTotal">0</b><span>Leads na base</span></div>
+        <span class="live-dot" id="liveDot"><i></i><span id="liveDotText">Conectando…</span></span>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi hero">
+          <div class="kpi-top"><span class="kpi-label">Total Leads</span>
+            <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
           </div>
-          <div class="legend" id="legend"></div>
+          <div class="kpi-value" id="kpiTotal">–</div>
+          <div class="kpi-note" id="kpiTotalNote">&nbsp;</div>
         </div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div><div class="card-title">Leads por Mês</div><div class="card-sub">Entrada de novos leads pelo formulário</div></div>
-          <span class="card-tag">Canal Webmotors</span>
-        </div>
-        <div class="bars" id="bars"></div>
-      </div>
-    </div>
-
-    <div class="grid cols-2b">
-      <div class="card">
-        <div class="card-head">
-          <div><div class="card-title">Motivos de Perda</div><div class="card-sub" id="reasonsSub">0 leads perdidos no período</div></div>
-          <span class="card-tag">Base: perdidos</span>
-        </div>
-        <div class="reasons" id="reasons"></div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div><div class="card-title">Funil de Vendas</div><div class="card-sub">Do lead ao contrato · base filtrada</div></div>
-          <span class="card-tag">Lead → Contrato</span>
-        </div>
-        <div class="funnel" id="funnel"></div>
-        <div class="fnote">Estimado a partir do status atual de cada lead (não do histórico de estágios).</div>
-      </div>
-    </div>
-
-    <div class="card" style="margin-top:14px">
-      <div class="card-head">
-        <div><div class="card-title">Ranking de Especialistas</div><div class="card-sub" id="rankEspecialistasSub">Quem mais enviou leads — base filtrada</div></div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <div class="rank-toggle" id="rankToggle">
-            <button type="button" data-mode="fechados" class="active">Fechados</button>
-            <button type="button" data-mode="enviados">Enviados</button>
+        <div class="kpi">
+          <div class="kpi-top"><span class="kpi-label">Em Andamento</span>
+            <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
           </div>
-          <span class="card-tag" id="rankEspecialistasTag">0 especialistas</span>
+          <div class="kpi-value" id="kpiAndamento">–</div>
+          <div class="kpi-note">&nbsp;</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-top"><span class="kpi-label">Perdidos</span>
+            <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg></span>
+          </div>
+          <div class="kpi-value" id="kpiPerdidos">–</div>
+          <div class="kpi-note" id="kpiPerdidosNote">&nbsp;</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-top"><span class="kpi-label">Contratos Fechados</span>
+            <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          </div>
+          <div class="kpi-value" id="kpiFechados">–</div>
+          <div class="kpi-note good" id="kpiFechadosNote">&nbsp;</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-top"><span class="kpi-label">Taxa de Conversão</span>
+            <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 12 18 5"/><circle cx="12" cy="12" r="1.6" style="fill:#C8102E" stroke="none"/></svg></span>
+          </div>
+          <div class="kpi-value" id="kpiConversao">–</div>
+          <div class="kpi-note good" id="kpiConversaoNote">&nbsp;</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-top"><span class="kpi-label">Demos Agendadas</span>
+            <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M9 14.5l2 2 4-4"/></svg></span>
+          </div>
+          <div class="kpi-value" id="kpiDemos">–</div>
+          <div class="kpi-note">Coluna Demo Agendada</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-top"><span class="kpi-label">Demos Realizadas</span>
+            <span class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="m9 15 2 2 4-4"/></svg></span>
+          </div>
+          <div class="kpi-value" id="kpiDemosRealizadas">–</div>
+          <div class="kpi-note">Coluna Demo Realizada</div>
         </div>
       </div>
-      <div id="podiumEspecialistas" class="podium"></div>
-      <div id="rankEspecialistas" class="rank-rest"></div>
-    </div>
 
-    <div class="table-card">
-      <div class="table-toolbar">
-        <div class="search">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-          <input type="text" id="searchInput" placeholder="Buscar empresa, especialista, cidade ou representante…">
+      <div class="grid cols-2a">
+        <div class="card">
+          <div class="card-head">
+            <div><div class="card-title">Distribuição de Leads por Estágio</div><div class="card-sub">Situação atual da base filtrada</div></div>
+            <span class="card-tag" id="donutTag">0 leads</span>
+          </div>
+          <div class="donut-wrap">
+            <div class="donut">
+              <svg width="230" height="230" viewBox="0 0 230 230" id="donutSvg">
+                <circle cx="115" cy="115" r="88" fill="none" stroke="#EEF0F4" stroke-width="26"/>
+              </svg>
+              <div class="donut-center"><b id="donutTotal">0</b><span>Leads na base</span></div>
+            </div>
+            <div class="legend" id="legend"></div>
+          </div>
         </div>
-        <div class="chips" id="statusChips"></div>
+
+        <div class="card">
+          <div class="card-head">
+            <div><div class="card-title">Leads por Mês</div><div class="card-sub">Entrada de novos leads pelo formulário</div></div>
+            <span class="card-tag">Canal Webmotors</span>
+          </div>
+          <div class="bars" id="bars"></div>
+        </div>
       </div>
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>Revenda</th><th>Especialista</th><th>Cidade</th><th>Rede</th><th>Representante</th>
-              <th>Status</th><th>Próxima Ação</th><th>Observação</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody"></tbody>
-        </table>
+
+      <div class="grid cols-2b">
+        <div class="card">
+          <div class="card-head">
+            <div><div class="card-title">Motivos de Perda</div><div class="card-sub" id="reasonsSub">0 leads perdidos no período</div></div>
+            <span class="card-tag">Base: perdidos</span>
+          </div>
+          <div class="reasons" id="reasons"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div><div class="card-title">Funil de Vendas</div><div class="card-sub">Do lead ao contrato · base filtrada</div></div>
+            <span class="card-tag">Lead → Contrato</span>
+          </div>
+          <div class="funnel" id="funnel"></div>
+          <div class="fnote">Estimado a partir do status atual de cada lead (não do histórico de estágios).</div>
+        </div>
       </div>
-      <div class="table-footer">
-        <span id="tableFooter">Carregando…</span>
+
+      <div class="card" style="margin-top:14px">
+        <div class="card-head">
+          <div><div class="card-title">Ranking de Especialistas</div><div class="card-sub" id="rankEspecialistasSub">Quem mais enviou leads — base filtrada</div></div>
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="rank-toggle" id="rankToggle">
+              <button type="button" data-mode="fechados" class="active">Fechados</button>
+              <button type="button" data-mode="enviados">Enviados</button>
+            </div>
+            <span class="card-tag" id="rankEspecialistasTag">0 especialistas</span>
+          </div>
+        </div>
+        <div id="podiumEspecialistas" class="podium"></div>
+        <div id="rankEspecialistas" class="rank-rest"></div>
       </div>
-    </div>
-  </section>
+
+      <div class="table-card">
+        <div class="table-toolbar">
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="searchInput" placeholder="Buscar empresa, especialista, cidade ou representante…">
+          </div>
+          <div class="chips" id="statusChips"></div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Revenda</th><th>Especialista</th><th>Cidade</th><th>Rede</th><th>Representante</th>
+                <th>Status</th><th>Próxima Ação</th><th>Observação</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+        <div class="table-footer">
+          <span id="tableFooter">Carregando…</span>
+        </div>
+      </div>
+    </section>
+  </main>
 </div>
 
 <script>
@@ -453,7 +477,6 @@
     'Perdido':                 { cls:'b-red',    dot:'#DC2626', rank:0 }
   };
   const ICON_CO = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M6.5 12l1.7-4.2A2 2 0 0 1 10 6.5h4a2 2 0 0 1 1.8 1.3L17.5 12M6 12v5.5M18 12v5.5"/><circle cx="8" cy="16" r="1.4"/><circle cx="16" cy="16" r="1.4"/></svg>';
-  const ICON_ORIGEM = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>';
 
   let ALL_ROWS = [];
   let currentRede = null;
@@ -504,7 +527,7 @@
     fetchData().finally(() => {
       btn.classList.remove('spinning');
       btn.disabled = false;
-      txt.textContent = 'Atualizar Dashboard';
+      txt.textContent = 'Atualizar';
     });
   });
 
@@ -643,7 +666,7 @@
   function onError(err){
     const dot = document.getElementById('liveDot');
     dot.classList.add('err');
-    document.getElementById('liveDotText').textContent = 'Erro ao atualizar — tente clicar em "Atualizar Dashboard"';
+    document.getElementById('liveDotText').textContent = 'Erro ao atualizar — tente clicar em "Atualizar"';
     console.error(err);
   }
   fetchData();
