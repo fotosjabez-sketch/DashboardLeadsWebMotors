@@ -388,21 +388,26 @@
   const API_URL = '/api/leads';
 
   const REDES = [
-    { label: 'Todas as Redes',      value: null },
-    { label: 'Inside Sales',        value: 'inside sales' },
-    { label: 'São Paulo',           value: 'sp' },
-    { label: 'São Paulo - Interior', value: 'sp interior' },
-    { label: 'Nordeste',            value: 'nordeste' },
-    { label: 'Sul',                 value: 'sul' },
-  ];
-  function matchesRede(row, target){
-    if (target === null) return true;
-    const val = (row.Rede || '').trim().toLowerCase();
-    if (target === 'sp interior') return val === 'sp interior' || val === 'são paulo - interior' || val === 'sao paulo - interior' || val === 'são paulo interior';
-    if (target === 'sp') return val === 'sp' || val === 'são paulo' || val === 'sao paulo';
-    if (target === 'sul') return val === 'sul' || val === 'região sul' || val === 'regiao sul';
-    return val === target;
-  }
+  { label: 'Todas as Redes',      value: null },
+  { label: 'Inside Sales',        value: 'inside sales' },
+  { label: 'São Paulo',           value: 'sp' },
+  { label: 'São Paulo - Interior', value: 'sp interior' },
+  { label: 'Nordeste',            value: 'nordeste' },
+  { label: 'Sul',                 value: 'sul' },
+  { label: 'Sudeste',             value: 'sudeste' },
+  { label: 'CONO',                value: 'cono' },
+];
+  
+function matchesRede(row, target){
+  if (target === null) return true;
+  const val = (row.Rede || '').trim().toLowerCase();
+  if (target === 'sp interior') return val === 'sp interior' || val === 'são paulo - interior' || val === 'sao paulo - interior' || val === 'são paulo interior';
+  if (target === 'sp') return val === 'sp' || val === 'são paulo' || val === 'sao paulo';
+  if (target === 'sul') return val === 'sul' || val === 'região sul' || val === 'regiao sul';
+  if (target === 'sudeste') return val === 'sudeste' || val === 'região sudeste' || val === 'regiao sudeste';
+  if (target === 'cono') return val === 'cono' || val === 'centro-oeste norte' || val === 'centro oeste norte';
+  return val === target;
+}
 
   // Aliases: normaliza variações de texto do Status pro rótulo canônico
   // usado nos gráficos (cor, funil). O texto ORIGINAL continua sendo
